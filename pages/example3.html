@@ -39,10 +39,46 @@
 
 <div class="container">
 
-    <h1>Hello Bootcamp!</h1>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" aria-label="...">
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="radio" aria-label="...">
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" aria-label="..." checked>
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="radio" aria-label="..." checked>
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
 
 </div>
 
 <script src="../dist/scripts/script.js"></script>
+<script>
+    $('input[type=checkbox]:checked, input[type=radio]:checked').parent().addClass('selected')
+</script>
 </body>
 </html>
