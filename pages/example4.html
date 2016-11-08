@@ -39,10 +39,19 @@
 
 <div class="container">
 
-    <h1>Hello Bootcamp!</h1>
+    <div id="text">
+        <p><span>Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit. Consectetur corporis eos, harum mollitia perspiciatis recusandae velit. Blanditiis consequatur cupiditate odit ratione sequi! Dolores harum molestias, necessitatibus quod rerum sunt vel?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis eos, harum mollitia perspiciatis recusandae velit. Blanditiis consequatur cupiditate odit ratione sequi! Dolores harum molestias, necessitatibus quod rerum sunt vel?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis eos, harum mollitia perspiciatis recusandae velit. Blanditiis consequatur cupiditate odit ratione sequi! Dolores harum molestias, necessitatibus quod rerum sunt vel?</p>
+        <p><em>Lorem ipsum dolor sit amet,</em> consectetur adipisicing elit. Consectetur corporis eos, harum mollitia perspiciatis recusandae velit. Blanditiis consequatur cupiditate odit ratione sequi! Dolores harum molestias, necessitatibus quod rerum sunt vel?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis eos, harum mollitia perspiciatis recusandae velit. Blanditiis consequatur cupiditate odit ratione sequi! Dolores harum molestias, necessitatibus quod rerum sunt vel?</p>
+    </div>
 
 </div>
 
 <script src="../dist/scripts/script.js"></script>
+<script>
+    $("#text p:not(:has(*)):eq(0)").addClass('selected')
+</script>
 </body>
 </html>
